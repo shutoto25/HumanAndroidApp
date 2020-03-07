@@ -11,11 +11,10 @@ class Human : Animal, Thinkable {
     }
 
     override fun say() {
-        Log.d(TAG, "私の名前は" + this.name + "です。")
-        Log.d(TAG, "年は" + this.age + "歳です。")
+        Log.d(TAG, "私の名前は${this.name}です。" + "年は${this.age}歳です。")
     }
 
     override fun think() {
-        Log.d(TAG, "私は" + this.hobby + "について考える。")
+        Log.d(TAG, "私は${this.hobby}について考える。")
     }
 }
